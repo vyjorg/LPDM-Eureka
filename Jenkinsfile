@@ -31,7 +31,7 @@ pipeline {
             steps {
                 sh 'docker stop LPDM-EurekaMS || true && docker rm LPDM-EurekaMS || true'
                 sh 'docker pull vyjorg/lpdm-eureka:latest'
-                sh 'docker run -d --name LPDM-EurekakMS -p 28091:28091 --restart always --memory-swappiness=0  vyjorg/lpdm-eureka:latest'
+                sh 'docker run -d --name LPDM-EurekaMS -p 28091:28091 --restart always --memory-swappiness=0  vyjorg/lpdm-eureka:latest'
             }
         }
     }
